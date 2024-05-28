@@ -7,7 +7,7 @@ export function addFooter() {
     // Create link element for the CSS file
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '../../styles/footer.css';
+    link.href = '/Exam-project/styles/footer.css';
     document.head.appendChild(link);
 
     // Create footer element
