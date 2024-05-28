@@ -1,4 +1,4 @@
-import { registerUser } from '../pageAPI/fetchregister.mjs';
+import { registerUser } from '../pageAPI/fetchRegister.mjs';
 import { addHeader } from '../pageElementes/header.mjs';
 import { addFooter } from '../pageElementes/footer.mjs';
 import { clearAndLoadCSS} from '../pageElementes/stylesManager.mjs';

@@ -74,14 +74,14 @@ export const displayLoginPage = async () => {
         event.preventDefault();
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
-
+    
         try {
             const response = await loginUser(data);
             if (response.ok) {
                 const result = await response.json();
                 console.log('User logged in:', result);
-                localStorage.setItem('accessToken', result.data.accessToken);
-                localStorage.setItem('user', JSON.stringify(result.data));
+                sessionStorage.setItem('accessToken', result.data.accessToken);
+                sessionStorage.setItem('user', JSON.stringify(result.data));
                 alert('Login successful!');
                 window.location.hash = 'dashboard';
             } else {
