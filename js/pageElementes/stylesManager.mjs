@@ -15,10 +15,10 @@ export function clearAndLoadCSS(hrefs) {
     }
 
     // Ensure footer.css is always included
-    if (!document.querySelector('link[href="Exam-project/styles/footer.css"]')) {
+    if (!document.querySelector('link[href="/Exam-project/styles/footer.css"]')) {
         const footerLink = document.createElement('link');
         footerLink.rel = 'stylesheet';
-        footerLink.href = 'Exam-project/styles/footer.css';
+        footerLink.href = '/Exam-project/styles/footer.css';
         document.head.appendChild(footerLink);
     }
 
