@@ -1,20 +1,20 @@
 import { registerUser } from '/Exam-project/js/pageAPI/fetchRegister.mjs';
-import { addHeader } from 'Exam-project/js/pageElementes/header.mjs';
-import { addFooter } from 'Exam-project/js/pageElementes/footer.mjs';
-import { clearAndLoadCSS} from 'Exam-project/js/pageElementes/stylesManager.mjs';
-import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';;
+import { addHeader } from '/Exam-project/js/pageElementes/header.mjs';
+import { addFooter } from '/Exam-project/js/pageElementes/footer.mjs';
+import { clearAndLoadCSS} from '/Exam-project/js/pageElementes/stylesManager.mjs';
+import { loadCSS} from '/Exam-project/js/pageElementes/stylesLoader.mjs';;
 
 //Function to create register page
 export const displayRegisterPage = async () => {
     try {
-        await loadCSS('Exam-project/styles/accountForm.css');
+        await loadCSS('/Exam-project/styles/accountForm.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('Exam-project/styles/accountForm.css');
+    clearAndLoadCSS('/Exam-project/styles/accountForm.css');
 
     addHeader();
     addFooter();

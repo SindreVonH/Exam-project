@@ -1,23 +1,23 @@
-import { fetchPosts } from 'Exam-project/js/pageAPI/etchPosts.mjs';
-import { createCarousel } from 'Exam-project/js/pageElementes/carousel.mjs';
-import { addHeader } from 'Exam-project/js/pageElementes/header.mjs';
-import { addFooter } from 'Exam-project/js/pageElementes/footer.mjs';
-import { clearAndLoadCSS} from 'Exam-project/js/pageElementes/stylesManager.mjs';
-import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';
-import { initializeFilters } from 'Exam-project/js/pageElementes/filterSort.mjs'; 
+import { fetchPosts } from '/Exam-project/js/pageAPI/etchPosts.mjs';
+import { createCarousel } from '/Exam-project/js/pageElementes/carousel.mjs';
+import { addHeader } from '/Exam-project/js/pageElementes/header.mjs';
+import { addFooter } from '/Exam-project/js/pageElementes/footer.mjs';
+import { clearAndLoadCSS} from '/Exam-project/js/pageElementes/stylesManager.mjs';
+import { loadCSS} from '/Exam-project/js/pageElementes/stylesLoader.mjs';
+import { initializeFilters } from '/Exam-project/js/pageElementes/filterSort.mjs'; 
 
 
 //Function to Create BlogFeedPage
 export const displayBlogFeedPage = async () => {
     try {
-        await loadCSS('Exam-project/styles/blogFeed.css');
+        await loadCSS('/Exam-project/styles/blogFeed.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('Exam-project/styles/blogFeed.css');
+    clearAndLoadCSS('/Exam-project/styles/blogFeed.css');
     
     addHeader();
     addFooter();
