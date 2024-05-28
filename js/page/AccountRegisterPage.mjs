@@ -1,8 +1,8 @@
-import { registerUser } from '../pageAPI/fetchRegister.mjs';
-import { addHeader } from 'Exam-project\js\pageElementes\header.mjs';
-import { addFooter } from 'Exam-project\js\pageElementes\footer.mjs';
-import { clearAndLoadCSS} from '../pageElementes/stylesManager.mjs';
-import { loadCSS} from '../pageElementes/stylesLoader.mjs';
+import { registerUser } from 'Exam-project/js/pageAPI/fetchRegister.mjs';
+import { addHeader } from 'Exam-project/js/pageElementes/header.mjs';
+import { addFooter } from 'Exam-project/js/pageElementes/footer.mjs';
+import { clearAndLoadCSS} from 'Exam-project/js/pageElementes/stylesManager.mjs';
+import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';;
 
 //Function to create register page
 export const displayRegisterPage = async () => {
