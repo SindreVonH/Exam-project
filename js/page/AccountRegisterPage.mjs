@@ -1,4 +1,4 @@
-import { registerUser } from 'Exam-project/js/pageAPI/fetchRegister.mjs';
+import { registerUser } from '/Exam-project/js/pageAPI/fetchRegister.mjs';
 import { addHeader } from 'Exam-project/js/pageElementes/header.mjs';
 import { addFooter } from 'Exam-project/js/pageElementes/footer.mjs';
 import { clearAndLoadCSS} from 'Exam-project/js/pageElementes/stylesManager.mjs';
