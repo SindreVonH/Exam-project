@@ -7,14 +7,14 @@ import { loadCSS} from '../pageElementes/stylesLoader.mjs';
 //Function to create postEditPage
 export const displayEditPostPage = async () => {
     try {
-        await loadCSS('./styles/postForm.css');
+        await loadCSS('../../styles/postForm.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('./styles/postForm.css');
+    clearAndLoadCSS('../../styles/postForm.css');
     
     addHeader();
     addFooter();

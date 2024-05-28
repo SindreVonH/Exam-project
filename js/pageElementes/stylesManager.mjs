@@ -7,18 +7,18 @@ export function clearAndLoadCSS(hrefs) {
     }
 
     // Ensure header.css is always included
-    if (!document.querySelector('link[href="./styles/header.css"]')) {
+    if (!document.querySelector('link[href="../../styles/header.css"]')) {
         const headerLink = document.createElement('link');
         headerLink.rel = 'stylesheet';
-        headerLink.href = './styles/header.css';
+        headerLink.href = '../../styles/header.css';
         document.head.appendChild(headerLink);
     }
 
     // Ensure footer.css is always included
-    if (!document.querySelector('link[href="./styles/footer.css"]')) {
+    if (!document.querySelector('link[href="../../styles/footer.css"]')) {
         const footerLink = document.createElement('link');
         footerLink.rel = 'stylesheet';
-        footerLink.href = './styles/footer.css';
+        footerLink.href = '../../styles/footer.css';
         document.head.appendChild(footerLink);
     }
 
@@ -31,7 +31,7 @@ export function clearAndLoadCSS(hrefs) {
     }
 
     // Clear other existing stylesheets, but not header.css, footer.css, or Google Fonts
-    const existingLinks = document.querySelectorAll('link[rel="stylesheet"]:not([href="./styles/header.css"]):not([href="./styles/footer.css"]):not([href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@300;400&display=swap"])');
+    const existingLinks = document.querySelectorAll('link[rel="stylesheet"]:not([href="../../styles/header.css"]):not([href="../../styles/footer.css"]):not([href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@300;400&display=swap"])');
     existingLinks.forEach(link => link.parentNode.removeChild(link));
 
     // Load the new stylesheets

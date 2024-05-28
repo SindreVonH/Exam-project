@@ -7,14 +7,14 @@ import { loadCSS} from '../pageElementes/stylesLoader.mjs';
 //Function to create dashboard
 export const displayDashboardPage = async () => {
     try {
-        await loadCSS('./styles/dashboard.css');
+        await loadCSS('../../styles/dashboard.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('./styles/dashboard.css');
+    clearAndLoadCSS('../../styles/dashboard.css');
     
     addHeader();
     addFooter();

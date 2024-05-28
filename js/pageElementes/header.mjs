@@ -7,7 +7,7 @@ export function addHeader() {
     // Create link element for the CSS file
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = './styles/header.css';
+    link.href = '../../styles/header.css';
     document.head.appendChild(link);
 
     // Create header element
