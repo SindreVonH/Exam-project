@@ -4,6 +4,6 @@
 
 
 //Main javascript
-import { router } from './utilities/router.mjs';
+import { router } from '/Exam-project/utilities/router.mjs';
 
 document.addEventListener('DOMContentLoaded', router);
