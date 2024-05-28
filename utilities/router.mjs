@@ -1,10 +1,10 @@
-import { displayBlogFeedPage } from 'Exam-project/js/page/BlogFeedPage.mjs';
-import { displayBlogPostPage } from 'Exam-project/js/page/BlogPostPage.mjs';
-import { displayRegisterPage } from 'Exam-project/js/page/AccountRegisterPage.mjs';
-import { displayLoginPage } from 'Exam-project/js/page/AccountLoginPage.mjs';
-import { displayDashboardPage } from 'Exam-project/js/page/BlogPostAdminPage.mjs';
-import { displayCreatePostPage } from 'Exam-project/js/page/BlogPostCreatePage.mjs';
-import { displayEditPostPage } from 'Exam-project/js/page/BlogPostEditPage.mjs';
+import { displayBlogFeedPage } from '/Exam-project/js/page/BlogFeedPage.mjs';
+import { displayBlogPostPage } from '/Exam-project/js/page/BlogPostPage.mjs';
+import { displayRegisterPage } from '/Exam-project/js/page/AccountRegisterPage.mjs';
+import { displayLoginPage } from '/Exam-project/js/page/AccountLoginPage.mjs';
+import { displayDashboardPage } from '/Exam-project/js/page/BlogPostAdminPage.mjs';
+import { displayCreatePostPage } from '/Exam-project/js/page/BlogPostCreatePage.mjs';
+import { displayEditPostPage } from '/Exam-project/js/page/BlogPostEditPage.mjs';
 
 export async function router() {
     
