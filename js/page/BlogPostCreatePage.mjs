@@ -7,14 +7,14 @@ import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';
 //Function to create postCreatePage
 export const displayCreatePostPage = async () => {
     try {
-        await loadCSS('../../styles/postForm.css');
+        await loadCSS('Exam-project/styles/postForm.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('../../styles/postForm.css');
+    clearAndLoadCSS('Exam-project/styles/postForm.css');
     
     addHeader();
     addFooter();

@@ -7,7 +7,7 @@ import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';
 //Function to create BlogPostPage
 export const displayBlogPostPage = async () => {
     try {
-        await loadCSS('../../styles/blogPost.css');
+        await loadCSS('Exam-project/styles/blogPost.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
@@ -15,7 +15,7 @@ export const displayBlogPostPage = async () => {
 
     //Import pageElements
 
-    clearAndLoadCSS('../../styles/blogPost.css');
+    clearAndLoadCSS('Exam-project/styles/blogPost.css');
 
     addHeader();
     addFooter();

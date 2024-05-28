@@ -7,14 +7,14 @@ import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';
 //Function to create dashboard
 export const displayDashboardPage = async () => {
     try {
-        await loadCSS('../../styles/dashboard.css');
+        await loadCSS('Exam-project/styles/dashboard.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('../../styles/dashboard.css');
+    clearAndLoadCSS('Exam-project/styles/dashboard.css');
     
     addHeader();
     addFooter();

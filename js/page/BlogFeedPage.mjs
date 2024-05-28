@@ -10,14 +10,14 @@ import { initializeFilters } from 'Exam-project/js/pageElementes/filterSort.mjs'
 //Function to Create BlogFeedPage
 export const displayBlogFeedPage = async () => {
     try {
-        await loadCSS('../../styles/blogFeed.css');
+        await loadCSS('Exam-project/styles/blogFeed.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('../../styles/blogFeed.css');
+    clearAndLoadCSS('Exam-project/styles/blogFeed.css');
     
     addHeader();
     addFooter();
