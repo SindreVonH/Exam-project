@@ -1,0 +1,37 @@
+/* Styles for footer */
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    height: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
+
+.footer-content {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+/* Ensure footer is always at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex: 1 0 auto; 
+}
+
+footer {
+    flex-shrink: 0; 
+}
+

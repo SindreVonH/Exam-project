@@ -1,0 +1,105 @@
+/* General Page Styling */
+/* Styles for blogPostPage */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    color: #333333;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+#app {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9em;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    width: 100%;
+    line-height: 1.6;
+    font-family: 'Merriweather', serif;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    #app {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .post-container img {
+        max-height: 300px;
+    }
+
+    .post-container h1 {
+        font-size: 1.5em;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.8em;
+    }
+
+    .post-content {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    #app {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .post-container img {
+        max-height: 200px;
+    }
+
+    .post-container h1 {
+        font-size: 1.2em;
+    }
+
+    .post-meta {
+        font-size: 0.7em;
+    }
+
+    .post-content {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,339 @@
+/* General Page Styling */
+/* Styles blogFeedPage, Post Grid, carousel and filterSort*/
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #333333;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+}
+
+#app {
+    padding: 0;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.content-container {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.tag-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.tag-button, .sort-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2E8B57;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    flex: 1;
+    font-size: 14px;
+    margin: 0 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tag-button:hover, .sort-button:hover {
+    background-color: #276A45;
+}
+
+.tag-button.active {
+    background-color: #52b87f;
+}
+
+/* Carousel Styling */
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-item h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-item button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-item button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Pil til høyre */
+.gg-arrow-right-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 20px;
+}
+
+.gg-arrow-right-o::after,
+.gg-arrow-right-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4px;
+}
+
+.gg-arrow-right-o::after {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 6px;
+}
+
+.gg-arrow-right-o::before {
+    width: 10px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor;
+}
+
+/* Pil til venstre */
+.gg-arrow-left-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 22px;
+}
+
+.gg-arrow-left-o::after,
+.gg-arrow-left-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 4px;
+}
+
+.gg-arrow-left-o::after {
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    bottom: 6px;
+}
+
+.gg-arrow-left-o::before {
+    width: 10px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Post Grid Styling */
+
+.post-card {
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #ccc;
+}
+
+.post-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-card p {
+    color: #666666;
+    font-size: 0.9em;
+    padding: 0 10px 10px;
+}
+
+/* Set limit on the Grid */
+@media (min-width: 768px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tag-container, .post-grid, .carousel-container {
+        padding: 0 10px;
+    }
+
+    .tag-button, .sort-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .carousel-item h2 {
+        font-size: 1em;
+        padding: 4px 8px;
+    }
+
+    .carousel-item button {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .post-card h3 {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .post-card p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tag-button, .sort-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .carousel-item h2 {
+        font-size: 0.8em;
+        padding: 3px 6px;
+    }
+
+    .carousel-item button {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+
+    .post-card h3 {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .post-card p {
+        font-size: 0.7em;
+    }
+}
