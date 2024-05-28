@@ -1,4 +1,4 @@
-import { fetchPosts } from '/Exam-project/js/pageAPI/etchPosts.mjs';
+import { fetchPosts } from '/Exam-project/js/pageAPI/fetchPosts.mjs';
 import { createCarousel } from '/Exam-project/js/pageElementes/carousel.mjs';
 import { addHeader } from '/Exam-project/js/pageElementes/header.mjs';
 import { addFooter } from '/Exam-project/js/pageElementes/footer.mjs';

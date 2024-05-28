@@ -1,20 +1,20 @@
-import { getPosts, deletePost } from 'Exam-project/js/pageAPI/fetchPostAdmin.mjs';
-import { addHeader } from 'Exam-project/js/pageElementes/header.mjs';
-import { addFooter } from 'Exam-project/js/pageElementes/footer.mjs';
-import { clearAndLoadCSS} from 'Exam-project/js/pageElementes/stylesManager.mjs';
-import { loadCSS} from 'Exam-project/js/pageElementes/stylesLoader.mjs';
+import { getPosts, deletePost } from '/Exam-project/js/pageAPI/fetchPostAdmin.mjs';
+import { addHeader } from '/Exam-project/js/pageElementes/header.mjs';
+import { addFooter } from '/Exam-project/js/pageElementes/footer.mjs';
+import { clearAndLoadCSS} from '/Exam-project/js/pageElementes/stylesManager.mjs';
+import { loadCSS} from '/Exam-project/js/pageElementes/stylesLoader.mjs';
 
 //Function to create dashboard
 export const displayDashboardPage = async () => {
     try {
-        await loadCSS('Exam-project/styles/dashboard.css');
+        await loadCSS('/Exam-project/styles/dashboard.css');
     } catch (error) {
         console.error('Error loading CSS:', error);
         return;
     }
 
     //Import pageElements
-    clearAndLoadCSS('Exam-project/styles/dashboard.css');
+    clearAndLoadCSS('/Exam-project/styles/dashboard.css');
     
     addHeader();
     addFooter();
