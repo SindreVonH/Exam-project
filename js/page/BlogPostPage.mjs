@@ -1,5 +1,5 @@
-import { addHeader } from '../pageElementes/header.mjs';
-import { addFooter } from '../pageElementes/footer.mjs';
+import { addHeader } from 'Exam-project\js\pageElementes\header.mjs';
+import { addFooter } from 'Exam-project\js\pageElementes\footer.mjs';
 import { clearAndLoadCSS} from '../pageElementes/stylesManager.mjs';
 import { loadCSS} from '../pageElementes/stylesLoader.mjs';
 

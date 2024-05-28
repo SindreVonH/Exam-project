@@ -1,8 +1,8 @@
-import { loginUser } from '../pageAPI/fetchlogin.mjs';
-import { addHeader } from '../pageElementes/header.mjs';
-import { addFooter } from '../pageElementes/footer.mjs';
-import { clearAndLoadCSS} from '../pageElementes/stylesManager.mjs';
-import { loadCSS} from '../pageElementes/stylesLoader.mjs';
+import { loginUser } from 'Exam-project\js\pageAPI\fetchlogin.mjs';
+import { addHeader } from 'Exam-project\js\pageElementes\header.mjs';
+import { addFooter } from 'Exam-project\js\pageElementes\footer.mjs';
+import { clearAndLoadCSS} from 'Exam-project\js\pageElementes\stylesManager.mjs';
+import { loadCSS} from 'Exam-project\js\pageElementes\stylesLoader.mjs';
 
 //Function to create login page
 export const displayLoginPage = async () => {
@@ -74,14 +74,14 @@ export const displayLoginPage = async () => {
         event.preventDefault();
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
-    
+
         try {
             const response = await loginUser(data);
             if (response.ok) {
                 const result = await response.json();
                 console.log('User logged in:', result);
-                sessionStorage.setItem('accessToken', result.data.accessToken);
-                sessionStorage.setItem('user', JSON.stringify(result.data));
+                localStorage.setItem('accessToken', result.data.accessToken);
+                localStorage.setItem('user', JSON.stringify(result.data));
                 alert('Login successful!');
                 window.location.hash = 'dashboard';
             } else {
